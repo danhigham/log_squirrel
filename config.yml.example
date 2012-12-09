@@ -1,0 +1,31 @@
+---
+:cf_endpoint: http://api.cloudfoundry.com # VCAP endpoint, leave as is for cloudfoundry.com
+:username: cloudfoundry-username # cloud foundry username
+:password: cloudfoundry-password # cloud foundry password
+:remote_folder: aws-bucket-name # the remote folder for storage (bucket name for AWS)
+
+:fog_storage: # fog storage config, see http://fog.io/1.8.0/storage/
+  :provider: AWS 
+  :aws_access_key_id: AKIAIXU6POYEMP3FNEIQ
+  :aws_secret_access_key: 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
+
+:jobs: # array of backup jobs
+  - :application: app-name # the name of the application
+    :frequency: :day # the frequency of the backup, :day, :hour or :week
+    :archive: true # upload archive of files instead of a folder
+    :paths: # array of all the files you wish to back up
+    - logs/staging.log
+    - logs/stderr.log
+    - logs/stdout.log
+
+  # - :application: blah
+  #   :frequency: :hour
+  #   :paths:
+  #   - /logs/log1.txt
+  #   - /logs/log2.txt
+
+  # - :application: blah
+  #   :frequency: :day
+  #   :paths:
+  #   - /logs/log1.txt
+  #   - /logs/log2.txt
