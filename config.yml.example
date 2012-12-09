@@ -6,8 +6,8 @@
 
 :fog_storage: # fog storage config, see http://fog.io/1.8.0/storage/
   :provider: AWS 
-  :aws_access_key_id: AKIAIXU6POYEMP3FNEIQ
-  :aws_secret_access_key: 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
+  :aws_access_key_id: AWS_KEY
+  :aws_secret_access_key: AWS_SECRET
 
 :jobs: # array of backup jobs
   - :application: app-name # the name of the application
