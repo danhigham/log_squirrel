@@ -13,7 +13,7 @@ Regularly backup log files (any files for that matter!) from a cloud foundry app
   
 3. Tailor the config to suit your requirements
 
-4. Deploy the application, using the handy script
+4. Bundle install and deploy the application, using the handy script
 
   ``bundle install && ./deploy.rb``
 
