@@ -15,5 +15,5 @@ Regularly backup log files (any files for that matter!) from a cloud foundry app
 
 4. Deploy the application, using the handy script
 
-  ``./deploy.rb``
+  ``bundle install && ./deploy.rb``
 
