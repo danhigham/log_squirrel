@@ -10,7 +10,7 @@ config = YAML.load_file("./config.yml")
 puts "* Connecting to Cloud Foundry"
 
 client = CFoundry::Client.new config[:cf_endpoint]
-client.login :username => config[:username], :password => config[:password]
+client.login config[:username], config[:password]
 
 service_name = 'log-squirrel-redis'
 app_name = 'log-squirrel'
